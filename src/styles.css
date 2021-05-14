@@ -1,0 +1,72 @@
+body {
+  background-image: url("images/torontosunset.jpg");
+}
+input[type="city"] {
+  font-family: "Titillium Web", sans-serif;
+  border: solid 1px rgb(12, 6, 6, 0.8);
+  border-radius: 5px;
+  box-shadow: rgba(5, 5, 5, 0.5) 0px 8px 8px 0;
+  padding: 5px;
+  background-color: rgb(236, 220, 209, 0.6);
+  position: relative;
+  left: 695px;
+  top: 50px;
+}
+h1 {
+  font-size: 48px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  color: rgb(63, 60, 218);
+  margin: 0;
+}
+ul {
+  margin: 0%;
+  padding: 0;
+}
+li {
+  font-size: 30px;
+  font-family: "Roboto Slab", serif;
+  color: rgb(63, 60, 218);
+  font-weight: lighter;
+  list-style: none;
+}
+
+.degrees {
+  font-size: 100px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  line-height: 150px;
+  color: rgb(63, 60, 218);
+  margin: 0%;
+}
+.units {
+  font-size: 30px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  color: rgb(63, 60, 218);
+  position: relative;
+  top: -90px;
+  right: 40px;
+}
+.weather-icon {
+  font-size: 200px;
+  color: #fab356;
+  position: fixed;
+  right: 450px;
+  top: 200px;
+}
+.outer-box-frame {
+  background-color: rgb(236, 220, 209, 0.6);
+  border: solid 1px rgb(12, 6, 6, 0.8);
+  border-radius: 10px;
+  box-shadow: rgba(5, 5, 5, 0.5) 0px 8px 8px 0;
+  margin: 60px auto;
+  max-width: 600px;
+  padding: 25px;
+}
+#week {
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  color: rgb(63, 60, 218);
+}
