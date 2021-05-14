@@ -1,5 +1,5 @@
 body {
-  background-image: url("images/torontosunset.jpg");
+  background-image: url("../images/torontosunset.jpg");
 }
 input[type="city"] {
   font-family: "Titillium Web", sans-serif;
