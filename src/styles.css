@@ -3,14 +3,18 @@ body {
 }
 input[type="city"] {
   font-family: "Titillium Web", sans-serif;
+  text-align: left;
+  cursor: text;
+}
+.btn-outline-secondary {
+  background-color: rgb(236, 220, 209, 0.6) !important;
   border: solid 1px rgb(12, 6, 6, 0.8);
-  border-radius: 5px;
-  box-shadow: rgba(5, 5, 5, 0.5) 0px 8px 8px 0;
-  padding: 5px;
-  background-color: rgb(236, 220, 209, 0.6);
-  position: relative;
-  left: 695px;
-  top: 50px;
+  box-shadow: rgba(5, 5, 5, 0.2) 0px 5px 5px 0;
+}
+
+.btn-outline-secondary:hover {
+  background-color: white !important;
+  color: black;
 }
 h1 {
   font-size: 48px;
@@ -33,6 +37,7 @@ li {
 
 .overview {
   margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 #degrees {

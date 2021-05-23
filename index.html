@@ -37,16 +37,30 @@
   </head>
   <body>
     <div class="container">
-      <form id="search-form">
-        <input
-          type="city"
-          placeholder="Enter a City"
-          autofocus="on"
-          autocomplete="off"
-          id="search-city-input"
-        />
-      </form>
       <div class="outer-box-frame">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="city"
+                placeholder="Enter a City"
+                autofocus="on"
+                autocomplete="off"
+                id="search-city-input"
+                class="btn btn-outline-secondary w-100"
+              />
+            </div>
+            <div class="col-3">
+              <button
+                type="button"
+                class="btn btn-outline-secondary w-100"
+                id="current-location-button"
+              >
+                ⌖
+              </button>
+            </div>
+          </div>
+        </form>
         <div class="overview">
           <div class="row">
             <div class="col-6">
