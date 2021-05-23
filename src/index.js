@@ -1,10 +1,14 @@
 function showTemperature(response) {
-  console.log(response.data);
+  let iconElement = document.querySelector("#icon");
   document.querySelector("h1").innerHTML = response.data.name;
   document.querySelector("#degrees").innerHTML = Math.round(
     response.data.main.temp
   );
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function search(event) {
@@ -36,7 +40,7 @@ let months = [
   "September",
   "October",
   "November",
-  "December"
+  "December",
 ];
 
 let currentMonth = months[now.getMonth()];

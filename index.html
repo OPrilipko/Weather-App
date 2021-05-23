@@ -47,19 +47,22 @@
         />
       </form>
       <div class="outer-box-frame">
-        <h1>Toronto, Ontario</h1>
-        <ul>
-          <li>April 8, 2021</li>
-          <li>Humidity <span id="humidity">35</span>%</li>
-        </ul>
-        <div class="row align-items-center mb-5">
-          <div class="col-6">
-            <span class="degrees" id="degrees"> 4 </span
-            ><span class="units">°C | <a href="#">°F</a> </span>
-          </div>
-          <div class="col-6 text-center">
-            <div>
-              <i class="fas fa-cloud-sun weather-icon"></i>
+        <div class="overview">
+          <div class="row">
+            <div class="col-6">
+              <h1>Toronto</h1>
+              <ul>
+                <li>April 8, 2021</li>
+                <li>Humidity <span id="humidity">35</span>%</li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img src="" id="icon" />
+
+                <strong id="degrees"></strong>
+                <span class="units">°C | <a href="#">°F</a> </span>
+              </div>
             </div>
           </div>
         </div>

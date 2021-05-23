@@ -24,37 +24,36 @@ ul {
   padding: 0;
 }
 li {
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Roboto Slab", serif;
   color: rgb(63, 60, 218);
   font-weight: lighter;
   list-style: none;
 }
 
-.degrees {
-  font-size: 100px;
+.overview {
+  margin-bottom: 40px;
+}
+
+#degrees {
+  font-size: 80px;
   font-family: "Roboto Slab", serif;
   font-weight: 300;
-  line-height: 150px;
   color: rgb(63, 60, 218);
-  margin: 0%;
 }
 .units {
-  font-size: 30px;
+  font-size: 20px;
   font-family: "Roboto Slab", serif;
   font-weight: 300;
   color: rgb(63, 60, 218);
   position: relative;
-  top: -60px;
-  right: 10px;
+  top: -45px;
 }
-.weather-icon {
-  font-size: 200px;
-  color: #fab356;
-  position: fixed;
-  right: 450px;
-  top: 200px;
+
+.weather-temperature img {
+  vertical-align: bottom;
 }
+
 .outer-box-frame {
   background-color: rgb(236, 220, 209, 0.6);
   border: solid 1px rgb(12, 6, 6, 0.8);
