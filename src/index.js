@@ -11,13 +11,17 @@ function showTemperature(response) {
   );
 }
 
-function search(event) {
-  event.preventDefault();
-  let city = document.querySelector("#search-city-input").value;
+function searchCity(city) {
   let apiKey = "e81420198cdd89cc0dae2cc13b1f4f88";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(showTemperature);
+}
+
+function search(event) {
+  event.preventDefault();
+  let city = document.querySelector("#search-city-input").value;
+  searchCity(city);
 }
 
 function searchLocation(position) {
@@ -35,8 +39,9 @@ let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 let form = document.querySelector("#search-form");
-
 form.addEventListener("submit", search);
+
+searchCity("Toronto");
 
 let now = new Date();
 let li = document.querySelector("li");
