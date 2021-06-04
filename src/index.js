@@ -9,6 +9,31 @@ function showTemperature(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  displayForecast();
+}
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Monday", "Tuesday", "Wednesday", "Thursday"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+            <div class="col-2">
+              <div class="weather-forecast-week">${day}</div>
+              <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                width="40"
+              />
+              <span class="weather-forecast-temperature">18°C</span>
+            </div>
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
 }
 
 function searchCity(city) {
@@ -65,4 +90,4 @@ let months = [
 
 let currentMonth = months[now.getMonth()];
 
-li.innerHTML = `${currentMonth} ${date}, ${year}`;
+li.innerHTML = `${currentMonth}, ${date}, ${year}`;
